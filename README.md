@@ -1,6 +1,7 @@
 # Photo Gallery Modal Examples
 ## Repositório base
-O repositório [Photo Gallry Modal](https://github.com/vini-cabral/photo-gallery-modal), foi baixado e colado na pasta src (`src/photo-gallery-modal`)
+O repositório [Photo Gallery Modal](https://github.com/vini-cabral/photo-gallery-modal), foi baixado e colado na pasta src (`src/photo-gallery-modal`).  
+Veja o projeto publicado [https://photo-gallery-modal-examples.netlify.app/](https://photo-gallery-modal-examples.netlify.app/)
 ## Estrutura de pastas e arquivos
 ### HTML
 Em `public/index.html`, temos duas Galerias de Imagens:  
@@ -14,7 +15,7 @@ Perceba que a instância recebe três parâmetros:
 2. `pathName` (caminho da pasta com as imagens);
 3. `fileNameList` (array com a lista de nomes dos arquivos de imagem).
 
-Exitem mais dois parâmetros padrões:  
+Existem mais dois parâmetros padrões:  
 - `hideBtntime` (tempo em milissegundos para ocultar os botões - __valor padrão 1500ms__);
 - `element` (nome da tag em que será criado dinamicamente o Photo Gallery Modal - __elemento padrão body__).
 
@@ -22,7 +23,7 @@ Exitem mais dois parâmetros padrões:
 Em `src/sass/main.sass`, logo no início do arquivo temos a seguinte importação `src/photo-gallery-modal/_style.sass`  
 ![](documentation/import-photo-gallery-modall-sass.png)  
 
-Caso haja necessidade você pode costumizar o arquivo de estilo (`src/photo-gallery-modal/_style.sass`) por meio das variáveis:  
+Caso haja necessidade você pode customizar o arquivo de estilo (`src/photo-gallery-modal/_style.sass`) por meio das variáveis:  
 ![](documentation/variables-sass.png)  
 __NOTA:__ Se você estiver utilizando um valor maior que 1000 no z-index em seu projeto, se necessário, atribua um valor maior em `$z-index`.
 
@@ -38,7 +39,7 @@ Veja os detalhes do comando `npm run compileSass` na imagem abaixo (package.json
 __NOTA:__
 - Será gerado o arquivo de estilo `public/assets/css/style.css`;
 - Em seu projeto verifique se a compilação está ocorrendo no arquivo que você definiu, e verifique também se ele está corretamente referenciado no arquivo html;
-- Com já mencionado é importante também checar os valores para o z-index.
+- Como já mencionado, é importante também checar os valores para o z-index.
 
 ### TypeScript (Compilação)
 Para compilar o arquivo main.ts, execute: `npm run compileTs`  

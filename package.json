@@ -1,7 +1,7 @@
 {
-  "name": "photo-gallery",
+  "name": "photo-gallery-modal-examples",
   "version": "1.0.0",
-  "description": "Editable Photo Gallery Template",
+  "description": "Example of using the Photo Gallery Modal",
   "main": "",
   "scripts": {
     "compileSass": "npx sass --watch src/sass/main.sass:public/assets/css/style.css",
