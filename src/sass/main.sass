@@ -1,0 +1,57 @@
+// Modal Photo Gallery instance containing the stylization
+@use '../photo-gallery-modal/_style'
+
+// Style coding of the other elements of the application
+html
+  font-family: Arial, Helvetica, sans-serif
+body
+  margin: 0
+  padding: 32px
+  box-sizing: border-box
+  background-color: #F5F5F5
+h1,h2
+  margin-top: 32px
+
+// Example 1
+#my-photo-gallery-1
+  display: grid
+  width: 100%
+  grid-gap: calc(32px)
+  grid-template-columns: 1fr 1fr
+  img
+    width: 100%
+    cursor: pointer
+@media(min-width: 576px)
+  #my-photo-gallery-1
+    grid-template-columns: 1fr 1fr
+@media(min-width: 992px)
+  #my-photo-gallery-1
+    grid-template-columns: 1fr 1fr 1fr
+@media(min-width: 1200px)
+  #my-photo-gallery-1
+    grid-template-columns: 1fr 1fr 1fr 1fr
+
+// Example 2
+#my-photo-gallery-2
+  display: grid
+  width: 100%
+  grid-gap: calc(32px)
+  grid-template-columns: 1fr
+  .my-photo-gallery-2__card
+    padding: 16px
+    background-color: white
+    -webkit-box-shadow: 2px 3px 13px 0px rgba(0,0,0,0.43)
+    box-shadow: 2px 3px 13px 0px rgba(0,0,0,0.43)
+    border-radius: 0.25rem
+    img
+      filter: grayscale(70%)
+      width: 100%
+      cursor: pointer
+    img:hover
+      filter: grayscale(0)
+@media(min-width: 992px)
+  #my-photo-gallery-2
+    grid-template-columns: 1fr 1fr
+@media(min-width: 1200px)
+  #my-photo-gallery-2
+    grid-template-columns: 1fr 1fr 1fr

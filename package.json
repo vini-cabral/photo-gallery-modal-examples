@@ -1,0 +1,34 @@
+{
+  "name": "photo-gallery",
+  "version": "1.0.0",
+  "description": "Editable Photo Gallery Template",
+  "main": "",
+  "scripts": {
+    "compileSass": "npx sass --watch src/sass/main.sass:public/assets/css/style.css",
+    "compileTs": "npx tsc -w --outFile public/assets/js/script.js src/photo-gallery-modal/index.ts src/ts/main.ts",
+    "startLiveServer": "npx live-server public",
+    "start": "npm run compileSass & npm run compileTs & npm run startLiveServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vini-cabral/photo-gallery.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "sass",
+    "typescript"
+  ],
+  "author": "Vinícius Cabral",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vini-cabral/photo-gallery/issues"
+  },
+  "homepage": "https://github.com/vini-cabral/photo-gallery#readme",
+  "devDependencies": {
+    "live-server": "^1.1.0",
+    "sass": "^1.53.0",
+    "typescript": "^4.7.4"
+  }
+}
